@@ -1,0 +1,55 @@
+fields:
+  - name: agreement_number
+    label: Номер договора
+    required: true
+    source: user
+  - name: agreement_date
+    label: Дата договора
+    required: true
+    source: user
+  - name: customer_name
+    label: Заказчик
+    required: true
+    source: user
+  - name: customer_address
+    label: Адрес заказчика
+    required: true
+    source: user
+  - name: customer_tax_id
+    label: Тестовый идентификатор заказчика
+    required: true
+    source: user
+  - name: contractor_name
+    label: Исполнитель
+    required: true
+    source: user
+  - name: contractor_address
+    label: Адрес исполнителя
+    required: true
+    source: user
+  - name: contractor_tax_id
+    label: Тестовый идентификатор исполнителя
+    required: true
+    source: user
+  - name: services
+    label: Позиции услуг
+    required: true
+    source: user
+    type: list
+    item_fields:
+      - name: name
+        label: Наименование
+      - name: quantity
+        label: Количество
+      - name: unit
+        label: Единица
+      - name: price
+        label: Цена
+  - name: total_amount
+    label: Итоговая сумма
+    required: true
+    source: computed
+  - name: total_in_words
+    label: Сумма прописью
+    required: true
+    source: computed

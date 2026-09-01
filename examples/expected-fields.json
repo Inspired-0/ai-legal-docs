@@ -1,0 +1,24 @@
+{
+  "agreement_number": "DEMO-001",
+  "agreement_date": "1 сентября 2026 года",
+  "customer_name": "ООО «Пример»",
+  "customer_address": "123 Example Street, Example City, 00000",
+  "customer_tax_id": "TEST-INN-0000000000",
+  "contractor_name": "Иван Иванов",
+  "contractor_address": "456 Sample Avenue, Example City, 00000",
+  "contractor_tax_id": "TEST-INN-1111111111",
+  "services": [
+    {
+      "name": "Анализ требований",
+      "quantity": "2",
+      "unit": "час",
+      "price": "1500"
+    },
+    {
+      "name": "Подготовка демонстрационного отчёта",
+      "quantity": "1",
+      "unit": "услуга",
+      "price": "4000"
+    }
+  ]
+}

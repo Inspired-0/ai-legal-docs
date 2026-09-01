@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_dxa": 12240,
+    "height_dxa": 15840,
+    "margins_dxa": [1440, 1440, 1440, 1440]
+  },
+  "table": {
+    "rows": 5,
+    "columns": 5,
+    "width_dxa": 9360,
+    "indent_dxa": 120,
+    "grid_dxa": [720, 4320, 1080, 1440, 1800],
+    "all_cell_widths_match_grid": true
+  },
+  "slots": [
+    "{%tr endfor %}",
+    "{%tr for service in services %}",
+    "{{ agreement_date }}",
+    "{{ agreement_number }}",
+    "{{ contractor_address }}",
+    "{{ contractor_name }}",
+    "{{ contractor_tax_id }}",
+    "{{ customer_address }}",
+    "{{ customer_name }}",
+    "{{ customer_tax_id }}",
+    "{{ service.amount }}",
+    "{{ service.name }}",
+    "{{ service.number }}",
+    "{{ service.price }}",
+    "{{ service.quantity }}",
+    "{{ service.unit }}",
+    "{{ total_amount }}",
+    "{{ total_in_words }}"
+  ]
+}
