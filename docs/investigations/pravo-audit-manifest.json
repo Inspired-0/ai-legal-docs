@@ -1,0 +1,272 @@
+{
+  "audit_date": "2026-10-19",
+  "method": "Read-only Python urllib GET requests; no authentication; no bulk crawl; HTTP used after HTTPS handshake timeouts. Manifest built from already saved responses without new network requests.",
+  "mappings": "All response URL/path mappings below exactly match executed enumerated probe lists. HTTP status from captured tool output; raw headers were not persisted.",
+  "saved_responses": [
+    {
+      "url": "http://pravo.gov.ru/",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_0.html",
+      "bytes_saved": 85549,
+      "sha256_saved_bytes": "9d9b9efe5ccac67cb5ae28009ff7a04ac53ad96e81086371ae3bd4e6c489113e",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?docbody=&nd=102000488",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_1.html",
+      "bytes_saved": 28251,
+      "sha256_saved_bytes": "ba1c1555ed52d748da7e841e1ff714242e75358604f6e471e369520aabc7cdcb",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_2.html",
+      "bytes_saved": 27953,
+      "sha256_saved_bytes": "609fe4b558a65ad51427c133ec22447ce62b7d76c2d0c7090db4208a041a1d0d",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/help",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_3.html",
+      "bytes_saved": 135818,
+      "sha256_saved_bytes": "20121aa135aa397686b9b853b07af94b9ed873bc1bb614ddce876e470ca78402",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/OpenData/list.json",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_4.html",
+      "bytes_saved": 1721,
+      "sha256_saved_bytes": "61b3d26a408bd59df9ed6268205ccf129e1a86c4c5969c09b5e272357bbb9a10",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?PageSize=10&index=1",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_audit_5.html",
+      "bytes_saved": 23278,
+      "sha256_saved_bytes": "e0ae53fe3b8dcb7b669b7b5d0237b4d2345c604297d9dfa7884d088c66fe0904",
+      "complete_http_body_saved": true,
+      "pagination": {
+        "itemsTotalCount": 1714234,
+        "itemsPerPage": 10,
+        "currentPage": 1,
+        "pagesTotalCount": 171424
+      },
+      "returned_items": 10,
+      "publication_dates": [
+        "2026-10-19T00:00:00"
+      ]
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?list_itself=&bpas=cd00000&a3=102000486&lstsize=20&start=0",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_0.html",
+      "bytes_saved": 39842,
+      "sha256_saved_bytes": "49e8636e3125cf74ed3c49ebe197a3c7cd16b5bf6fe6258cbc8f761ce8cbc969",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?docbody=&nd=102033239",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_1.html",
+      "bytes_saved": 56520,
+      "sha256_saved_bytes": "20a4bbad16055892fd1135b9c65356eb5d355064d3f68581ab6e0b13f21106c8",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?doc_itself=&nd=102000488&page=1&rdk=0",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_2.html",
+      "bytes_saved": 6025,
+      "sha256_saved_bytes": "53748f8212a8d2b5926dc0d6c058b5a716df65aa424e29d36e5453333059c21c",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/opendata/7710349494-legalacts-30/meta.json",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_3.html",
+      "bytes_saved": 1542,
+      "sha256_saved_bytes": "4afba6f9259d07afc49feb9629dc088124f22f3b79a7828773127a4272d931cb",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?PageSize=10&index=2",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_4.html",
+      "bytes_saved": 19762,
+      "sha256_saved_bytes": "39fa39ee7eabb98466a0c740551be24b61c7c58b820af65a1784bce46718a955",
+      "complete_http_body_saved": true,
+      "pagination": {
+        "itemsTotalCount": 1714234,
+        "itemsPerPage": 10,
+        "currentPage": 2,
+        "pagesTotalCount": 171424
+      },
+      "returned_items": 10,
+      "publication_dates": [
+        "2026-10-19T00:00:00"
+      ]
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Document?eoNumber=0001202610190008",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_b_5.html",
+      "bytes_saved": 1399,
+      "sha256_saved_bytes": "cfc83992fdf361b5a37400c27515941174f0355333d6edc18b9754a24c9d1af9",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?doc_itself=&nd=102033239&page=1&rdk=157",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_0.bin",
+      "bytes_saved": 588260,
+      "sha256_saved_bytes": "13ef0477ed8825ce4677040131a6adcd7fa92d2604a083fb8229d142d2d3f0fe",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?doc_itself=&nd=102033239&page=1&rdk=0",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_1.bin",
+      "bytes_saved": 439186,
+      "sha256_saved_bytes": "6a682429350b5b74da92680e7f1071c5943b80ccd49ee2b833a4c9137a8c91f1",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?savertf=&nd=102033239&page=all&rdk=157",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_2.bin",
+      "bytes_saved": 913142,
+      "sha256_saved_bytes": "bde73565db305f1fd9955bbdc5b87620e00fa5d316dba45de44f98ef90996186",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/opendata/7710349494-legalacts-30/structure-legalacts.csv",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_3.bin",
+      "bytes_saved": 1378,
+      "sha256_saved_bytes": "e0dac2a63d9a2d682dcc2fcebde344bb8058f1d26875d8d914f2df747a3d05f0",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/opendata/7710349494-legalacts-30/data-legalacts-30.csv",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_4.bin",
+      "bytes_saved": 4096,
+      "sha256_saved_bytes": "efb356a43a2e952c7db7cab586dd1947aa0374a0e74f8b44e4239a7270268fec",
+      "complete_http_body_saved": false,
+      "observed_content_length": 658386,
+      "note": "Only first 4096 bytes read; not a complete CSV download."
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/File/Pdf?eoNumber=0001202610190007",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_5.bin",
+      "bytes_saved": 89163,
+      "sha256_saved_bytes": "fffa1df30185b727d800b25a7357277c8c2753fd328efb5f92592b5f7f2ec3c5",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?list_itself=&bpas=cd00000&a3=102000486&lstsize=20&start=20",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_c_6.bin",
+      "bytes_saved": 43095,
+      "sha256_saved_bytes": "1540d3bebc41fcb64bbdb4a2f5233a9c09d7d422a9ba6f10d55f494f45d2d32a",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?doc_itself=&nd=102033239&page=all&rdk=157",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_d_1.bin",
+      "bytes_saved": 588260,
+      "sha256_saved_bytes": "13ef0477ed8825ce4677040131a6adcd7fa92d2604a083fb8229d142d2d3f0fe",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?PageSize=10&Index=1&PeriodType=day&Date=2026-10-19",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_d_2.bin",
+      "bytes_saved": 23278,
+      "sha256_saved_bytes": "e0ae53fe3b8dcb7b669b7b5d0237b4d2345c604297d9dfa7884d088c66fe0904",
+      "complete_http_body_saved": true,
+      "pagination": {
+        "itemsTotalCount": 1714234,
+        "itemsPerPage": 10,
+        "currentPage": 1,
+        "pagesTotalCount": 171424
+      },
+      "returned_items": 10,
+      "publication_dates": [
+        "2026-10-19T00:00:00"
+      ]
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?docbody=&vkart=card&nd=102033239&rdk=157",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_d_3.bin",
+      "bytes_saved": 56576,
+      "sha256_saved_bytes": "28355ba7e181b21d1d8f8d95f5338921789aba27c2feae63d5f70df7976b0736",
+      "complete_http_body_saved": true
+    },
+    {
+      "url": "http://pravo.gov.ru/proxy/ips/?doc_itself=&nd=102033239&page=2&rdk=157",
+      "observed_http_status": 200,
+      "response_path": "/tmp/pravo_page2.bin",
+      "bytes_saved": 588260,
+      "sha256_saved_bytes": "13ef0477ed8825ce4677040131a6adcd7fa92d2604a083fb8229d142d2d3f0fe",
+      "complete_http_body_saved": true,
+      "note": "Initial attempt timed out; one later retry succeeded."
+    }
+  ],
+  "observed_unsaved_results": [
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?pageSize=10&index=1&PublishDateSearchType=0&PublishDateFrom=29.02.2024&PublishDateTo=29.02.2024",
+      "result": "JSON parsed successfully; HTTP status not printed in this probe",
+      "itemsTotalCount": 699,
+      "returned_items": 10,
+      "all_returned_publishDateShort": "2024-02-29T00:00:00",
+      "response_path": null
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?pageSize=10&index=1&EoNumber=0001202610190007",
+      "observed_http_status": 200,
+      "itemsTotalCount": 1,
+      "response_path": null
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?pageSize=10&index=1&periodType=day&date=2024-02-29",
+      "observed_http_status": 200,
+      "itemsTotalCount": 1714234,
+      "all_returned_publishDateShort": "2026-10-19T00:00:00",
+      "note": "Requested date did not filter the observed response.",
+      "response_path": null
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?pageSize=10&index=1&publishDateFrom=2024-02-29&publishDateTo=2024-02-29",
+      "observed_http_status": 200,
+      "itemsTotalCount": 1714234,
+      "all_returned_publishDateShort": "2026-10-19T00:00:00",
+      "note": "Requested range did not filter the observed response.",
+      "response_path": null
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/api/Documents?pageSize=10&index=1&PublishDateSearchType=1&PublishDateFrom=2024-02-29&PublishDateTo=2024-02-29",
+      "result": "JSON parsed successfully; HTTP status not printed in this probe",
+      "itemsTotalCount": 1714234,
+      "all_returned_publishDateShort": "2026-10-19T00:00:00",
+      "response_path": null
+    }
+  ],
+  "findings": [
+    "API page 1 and page 2 had no overlapping eoNumber values.",
+    "IPS nd=102000488 was a Constitution category-like entry whose doc_itself says text absent; do not treat this as an actual Constitution text.",
+    "IPS GK I nd=102033239 rdk=157 doc_itself page 1, page 2, page all returned same incomplete body ending within article 183.",
+    "IPS savertf GK I page=all rdk=157 returned multipart/related HTML archive despite .rtf download filename; decoded HTML extends through article 453 and signature.",
+    "OpenData CSV contains authority-level publication counts and search links, not act texts."
+  ],
+  "probe_scripts": "Python probes executed as inline heredocs through exec_command; no standalone script saved. URLs and response evidence retained here.",
+  "retention_note": "Response paths are temporary audit artifacts on the original machine; raw legal documents are not included in the repository. A complete saved HTTP body does not establish a complete legal text."
+}

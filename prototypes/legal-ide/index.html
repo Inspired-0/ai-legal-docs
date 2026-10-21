@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Право — рабочее пространство юриста · Макет</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="titlebar">
+      <a class="brand" href="#workspace" aria-label="Право — рабочее пространство"><span class="brand-mark">п.</span><strong>право</strong><span class="brand-divider"></span><span class="muted">Рабочее пространство</span></a>
+      <button class="global-search" data-action="search"><span>⌕</span> Найти документ, норму или действие <kbd>Ctrl K</kbd></button>
+      <div class="title-end"><span class="prototype">SYNTHETIC DEMO</span><button class="avatar" data-action="settings" aria-label="Открыть настройки">В</button></div>
+    </header>
+    <nav class="rail" aria-label="Основная навигация">
+      <button data-view="workspace" class="rail-button active" title="Документы" aria-label="Документы" data-icon="files"></button>
+      <button data-view="dialogues" class="rail-button" title="Все диалоги" aria-label="Все диалоги" data-icon="chat"></button>
+      <button data-view="sources" class="rail-button" title="Правовая база" aria-label="Правовая база" data-icon="book"></button>
+      <button data-view="skills" class="rail-button" title="Навыки" aria-label="Навыки" data-icon="spark"></button>
+      <div class="rail-bottom"><button data-action="privacy" class="rail-button" title="Защита данных" aria-label="Защита данных" data-icon="shield"></button><button data-action="settings" class="rail-button" title="Настройки" aria-label="Настройки" data-icon="settings"></button></div>
+    </nav>
+    <aside class="sidebar" aria-label="Папки и документы">
+      <div class="project"><span class="project-icon">А</span><div><strong>Альта / юридический отдел</strong><small>Демонстрационная папка</small></div></div>
+      <button class="dialogues-nav" data-view="dialogues"><span data-icon="chat"></span>Все диалоги<span id="dialogue-count">1</span></button>
+      <div class="sidebar-heading"><span>Документы</span><button class="icon-btn" data-action="folder" title="Открыть папку" aria-label="Открыть папку">＋</button></div>
+      <button class="folder-row" data-action="toggle-files"><span id="folder-chevron">⌄</span><span data-icon="folder"></span> Внедрение платформы</button>
+      <div id="file-list">
+        <button class="file-row selected" data-file="contract"><span class="file-type word">W</span>Договор внедрения.docx<span class="file-dot"></span></button>
+        <button class="file-row" data-file="pdf"><span class="file-type pdf">P</span>Техническое задание.pdf</button>
+        <button class="file-row" data-file="protocol"><span class="file-type word">W</span>Протокол разногласий.docx</button>
+        <button class="file-row" data-file="notes"><span class="file-type note">≡</span>Позиция компании.md</button>
+      </div>
+      <div class="sidebar-bottom"><div class="privacy-mini"><span data-icon="shield"></span><span>Контекст агента скрывает имена</span></div><p>В макете — только вымышленные данные. Файлы компьютера не читаются.</p><button class="text-btn" data-action="reset">Сбросить демонстрацию ↗</button></div>
+    </aside>
+    <main class="main" id="main" tabindex="-1"></main>
+    <aside class="agent-panel" aria-label="Работа агента">
+      <div class="agent-heading"><span class="agent-symbol">✳</span><strong id="conversation-title">Ассистент</strong><span class="demo-label">демо</span><button class="icon-btn" data-action="new-task" title="Новый диалог" aria-label="Новый диалог">＋</button></div>
+      <div class="agent-tabs"><button class="active" data-agent-tab="task">Диалог</button><button data-agent-tab="review">Проверка <span class="tab-count">1</span></button></div>
+      <div class="agent-content" id="agent-content" aria-live="polite"></div>
+      <div class="composer-wrap"><div class="context-chip"><span data-icon="files"></span><span id="context-label">Договор внедрения.docx</span></div><form id="chat-form"><label class="sr-only" for="chat-input">Задача агенту</label><textarea id="chat-input" rows="2" placeholder="Задайте вопрос или опишите правку…"></textarea><div class="composer-bottom"><button type="button" class="model-select" data-action="settings">Модель не подключена ⌄</button><button type="submit" class="send" aria-label="Отправить демонстрационный запрос">↑</button></div></form><div class="composer-note"><span data-icon="shield"></span>Синтетический контекст · без отправки в сеть</div></div>
+    </aside>
+    <footer class="statusbar"><span><i class="connection-dot"></i> Локальный макет</span><span>Внедрение платформы / заказчик</span><span class="status-message" id="status-message">Изменения хранятся только до перезагрузки</span><button data-action="privacy">Псевдонимизация · демо</button><span>RU</span></footer>
+  </div>
+  <dialog id="dialog"><div class="dialog-heading"><h2 id="dialog-title"></h2><button class="icon-btn" data-action="close-dialog" aria-label="Закрыть">×</button></div><div id="dialog-body"></div></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+  <script src="live.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-21T14:52:54.694Z",
+  "browser": "Chromium / Playwright on macOS",
+  "passed": [
+    "Desktop layout and initial scenario",
+    "Reviewer and evidence navigation",
+    "PDF pages, context addition and review invalidation",
+    "Skill creation, trial and session-only save",
+    "Privacy preview and key entry disabled",
+    "Undo preserves subsequent manual text and reviewer does not claim analysis",
+    "TXT export contains manual changes and respects intentionally empty text",
+    "Reject, undo and suppression of stale canned claims",
+    "Search empty result does not imply absence of law",
+    "User text rendered literally and outbound connections blocked by CSP",
+    "No horizontal overflow at 1280, 960 and 390 pixels"
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Synthetic HTML only; no native DOCX/PDF engine, law API or LLM",
+    "No Windows execution test"
+  ]
+}

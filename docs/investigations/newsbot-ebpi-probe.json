@@ -1,0 +1,33 @@
+{
+  "observed_on": "2026-10-19",
+  "method": "Three read-only public GET requests via Python urllib; no newsBot imports, credentials or database access",
+  "raw_responses_persisted": false,
+  "limitations": ["HTTP transport, authenticity not independently established", "Response hashes identify observed bytes only", "No full corpus or article-by-article completeness validation"],
+  "observations": [
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redactions/?bpa=ebpi&t=%7B%22hash%22%3A+%22ba747b7c430fdfb9405741d818463a26af1577a680f7a9ab6318cc6f4faa1121%22%2C+%22ttl%22%3A+4%7D",
+      "status": 200,
+      "bytes": 15024,
+      "sha256": "313d05be5e86313f355de082eab1df9943d2c7288935cdd9d90d31b82d5e0d72",
+      "redactions_count": 30,
+      "first": {"redid": 495930, "reddate": "20260901", "actual": true, "redofficial": true, "hascontent": true, "contentcomplete": true},
+      "last": {"redid": 402315, "reddate": "20220714", "actual": false, "redstatus": "недействующая"}
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redtext?bpa=ebpi&t=495930&ttl=2",
+      "status": 200,
+      "bytes": 1696310,
+      "sha256": "6d2da7fc06d3147d6ba1eff34f3c22cf1fcdcffa15be90b8ce476953f1291d92",
+      "html_characters": 1041318,
+      "article_453_and_final_signature_present": true
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redactions/?bpa=ebpi&t=%7B%22pnum%22%3A+%220001202607040012%22%2C+%22ttl%22%3A+2%7D",
+      "status": 200,
+      "bytes": 596,
+      "sha256": "d7e2cdf9e712e046c6116ee34e1056f9a30759cc735b2449f8cad8aa66b1a52d",
+      "dochash": "7e026bde4ab2a2dee2cac210ac66f86fe8ce2a69d30f1736814e9326067d9ae9",
+      "redaction": {"redid": 494507, "reddate": "20270101", "redofficial": true, "actual": false, "redstatus": "не вступившая", "hascontent": true, "contentcomplete": true}
+    }
+  ]
+}
