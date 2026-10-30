@@ -1,0 +1,21 @@
+[project]
+name = "legal-rag-spike"
+version = "0.0.1"
+description = "Isolated retrieval experiment with public Russian legal texts"
+requires-python = ">=3.11"
+dependencies = [
+  "lxml>=5,<7",
+  "psycopg[binary]>=3.2,<4",
+  "sentence-transformers>=5,<6",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<9"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

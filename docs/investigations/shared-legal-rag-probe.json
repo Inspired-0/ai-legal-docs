@@ -1,0 +1,732 @@
+{
+  "observed_at": "2026-10-30T15:54:40.796552+00:00",
+  "schema": "probe_f77af9b24ba140759e4846aee47ad4d0",
+  "postgres": "17.11 (Debian 17.11-1.pgdg12+2)",
+  "pgvector": "0.8.7",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "device": "mps:0",
+  "editions": 3,
+  "articles": 1522,
+  "chunks": 2030,
+  "embedding_seconds": 8.742229333962314,
+  "embeddings_cached": false,
+  "vector_search": "exact cosine scan; no approximate index",
+  "checks": {
+    "all_chunk_offsets_match_extracted_text": true,
+    "changed_quote_rejected": true,
+    "wrong_edition_rejected": true,
+    "exact_current_lookup": true,
+    "historical_lookup_is_distinct": true
+  },
+  "query_count": 12,
+  "summary": {
+    "text": {
+      "hit_at_5": 0.5,
+      "mrr_at_50": 0.24560185185185182
+    },
+    "semantic": {
+      "hit_at_5": 0.8333333333333334,
+      "mrr_at_50": 0.725
+    },
+    "hybrid_rrf": {
+      "hit_at_5": 0.75,
+      "mrr_at_50": 0.4944471378294908
+    }
+  },
+  "results": [
+    {
+      "query": "неустойка штраф пеня",
+      "expected": [
+        "GK-1:330"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:332",
+            "GK-1:331",
+            "GK-1:330",
+            "GK-1:394",
+            "GK-1:333"
+          ],
+          "first_expected_rank": 3
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:330",
+            "GK-1:331",
+            "GK-1:333",
+            "GK-1:332",
+            "GK-1:394"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:330",
+            "GK-1:331",
+            "GK-1:332",
+            "GK-1:333",
+            "GK-1:394"
+          ],
+          "first_expected_rank": 1
+        }
+      },
+      "database_ms": {
+        "text": 3.7022080505266786,
+        "semantic": 3.543499973602593
+      }
+    },
+    {
+      "query": "суд уменьшение несоразмерной неустойки",
+      "expected": [
+        "GK-1:333"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:332",
+            "GK-1:331",
+            "GK-1:333",
+            "GK-1:394",
+            "GK-1:330"
+          ],
+          "first_expected_rank": 3
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:333",
+            "GK-1:395",
+            "GK-1:394",
+            "GK-1:393",
+            "GK-1:404"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:333",
+            "GK-1:394",
+            "GK-1:331",
+            "GK-1:395",
+            "GK-1:332"
+          ],
+          "first_expected_rank": 1
+        }
+      },
+      "database_ms": {
+        "text": 3.6912920186296105,
+        "semantic": 3.2775839790701866
+      }
+    },
+    {
+      "query": "проценты за пользование чужими денежными средствами",
+      "expected": [
+        "GK-1:395"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:317.1",
+            "GK-1:301",
+            "GK-1:395",
+            "GK-1:319",
+            "GK-4:1243.1"
+          ],
+          "first_expected_rank": 3
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:395",
+            "GK-1:317.1",
+            "GK-4:1243.1",
+            "GK-1:123.23",
+            "GK-1:235"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:317.1",
+            "GK-1:395",
+            "GK-4:1243.1",
+            "GK-1:123.23",
+            "GK-1:317"
+          ],
+          "first_expected_rank": 2
+        }
+      },
+      "database_ms": {
+        "text": 3.6459999391809106,
+        "semantic": 2.9227500781416893
+      }
+    },
+    {
+      "query": "форс мажор чрезвычайные непредотвратимые обстоятельства",
+      "expected": [
+        "GK-1:401"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:451",
+            "GK-1:242",
+            "GK-4:1423",
+            "GK-1:157",
+            "GK-1:381.1"
+          ],
+          "first_expected_rank": 6
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:149.4",
+            "GK-1:149.3",
+            "GK-1:451",
+            "GK-4:1274",
+            "GK-1:147.1"
+          ],
+          "first_expected_rank": null
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:451",
+            "GK-1:179",
+            "GK-1:178",
+            "GK-1:431.2",
+            "GK-1:242"
+          ],
+          "first_expected_rank": 21
+        }
+      },
+      "database_ms": {
+        "text": 3.080541966482997,
+        "semantic": 2.7281660586595535
+      }
+    },
+    {
+      "query": "как понять смысл неоднозначного условия договора",
+      "expected": [
+        "GK-1:431"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:362",
+            "GK-1:358.13",
+            "GK-1:444",
+            "GK-1:450.1",
+            "GK-1:429.1"
+          ],
+          "first_expected_rank": 15
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:421",
+            "GK-1:429.1",
+            "GK-1:428",
+            "GK-1:427",
+            "GK-1:420"
+          ],
+          "first_expected_rank": 6
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:429.1",
+            "GK-1:431",
+            "GK-1:421",
+            "GK-1:420",
+            "GK-1:428"
+          ],
+          "first_expected_rank": 2
+        }
+      },
+      "database_ms": {
+        "text": 4.309791955165565,
+        "semantic": 2.698417054489255
+      }
+    },
+    {
+      "query": "как уведомить другую сторону об одностороннем отказе от договора",
+      "expected": [
+        "GK-1:450.1"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-1:450.1",
+            "GK-1:154",
+            "GK-1:429.1",
+            "GK-1:310",
+            "GK-1:429"
+          ],
+          "first_expected_rank": 1
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:450.1",
+            "GK-1:310",
+            "GK-1:431.2",
+            "GK-1:183",
+            "GK-4:1234"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-1:450.1",
+            "GK-1:310",
+            "GK-1:453",
+            "GK-4:1234",
+            "GK-1:450"
+          ],
+          "first_expected_rank": 1
+        }
+      },
+      "database_ms": {
+        "text": 8.312667021527886,
+        "semantic": 3.4249579766765237
+      }
+    },
+    {
+      "query": "лицензионный договор способы использования вознаграждение",
+      "expected": [
+        "GK-4:1235"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1238",
+            "GK-4:1428",
+            "GK-4:1459",
+            "GK-1:362",
+            "GK-4:1235"
+          ],
+          "first_expected_rank": 5
+        },
+        "semantic": {
+          "top5": [
+            "GK-4:1235",
+            "GK-4:1236",
+            "GK-4:1428",
+            "GK-4:1237",
+            "GK-4:1459"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1428",
+            "GK-4:1235",
+            "GK-4:1459",
+            "GK-4:1238",
+            "GK-4:1469"
+          ],
+          "first_expected_rank": 2
+        }
+      },
+      "database_ms": {
+        "text": 4.839999950490892,
+        "semantic": 2.60733300819993
+      }
+    },
+    {
+      "query": "исключительная и неисключительная лицензия",
+      "expected": [
+        "GK-4:1236"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1423",
+            "GK-4:1458",
+            "GK-4:1457.1",
+            "GK-4:1285",
+            "GK-4:1468"
+          ],
+          "first_expected_rank": 18
+        },
+        "semantic": {
+          "top5": [
+            "GK-4:1233",
+            "GK-4:1423",
+            "GK-4:1236",
+            "GK-4:1254",
+            "GK-4:1286.1"
+          ],
+          "first_expected_rank": 3
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1423",
+            "GK-4:1362",
+            "GK-4:1239",
+            "GK-4:1236",
+            "GK-4:1254"
+          ],
+          "first_expected_rank": 4
+        }
+      },
+      "database_ms": {
+        "text": 3.0981249874457717,
+        "semantic": 2.5010419776663184
+      }
+    },
+    {
+      "query": "пользователь принимает условия использования программы при начале работы с ней",
+      "expected": [
+        "GK-4:1286"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1280",
+            "GK-1:191",
+            "GK-4:1464",
+            "GK-4:1432",
+            "GK-4:1261"
+          ],
+          "first_expected_rank": 8
+        },
+        "semantic": {
+          "top5": [
+            "GK-4:1286",
+            "GK-4:1280",
+            "GK-4:1296",
+            "GK-4:1286.1",
+            "GK-4:1270"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1280",
+            "GK-4:1286",
+            "GK-4:1270",
+            "GK-4:1262",
+            "GK-4:1297"
+          ],
+          "first_expected_rank": 2
+        }
+      },
+      "database_ms": {
+        "text": 3.3288749400526285,
+        "semantic": 2.7712909504771233
+      }
+    },
+    {
+      "query": "кому принадлежат права на программу разработанную по заказу",
+      "expected": [
+        "GK-4:1296"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1255",
+            "GK-4:1226",
+            "GK-4:1453",
+            "GK-4:1418",
+            "GK-1:358.5"
+          ],
+          "first_expected_rank": null
+        },
+        "semantic": {
+          "top5": [
+            "GK-4:1296",
+            "GK-4:1297",
+            "GK-4:1372",
+            "GK-4:1298",
+            "GK-4:1263"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1307",
+            "GK-4:1449",
+            "GK-4:1345",
+            "GK-4:1285",
+            "GK-4:1453"
+          ],
+          "first_expected_rank": 17
+        }
+      },
+      "database_ms": {
+        "text": 6.021166918799281,
+        "semantic": 2.419042051769793
+      }
+    },
+    {
+      "query": "как зарегистрировать программу для ЭВМ в государственном реестре",
+      "expected": [
+        "GK-4:1262"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1280",
+            "GK-4:1261",
+            "GK-4:1262",
+            "GK-4:1445",
+            "GK-1:127"
+          ],
+          "first_expected_rank": 3
+        },
+        "semantic": {
+          "top5": [
+            "GK-4:1262",
+            "GK-4:1261",
+            "GK-4:1280",
+            "GK-1:8.1",
+            "GK-4:1353"
+          ],
+          "first_expected_rank": 1
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1280",
+            "GK-4:1262",
+            "GK-4:1261",
+            "GK-4:1286",
+            "GK-1:8.1"
+          ],
+          "first_expected_rank": 2
+        }
+      },
+      "database_ms": {
+        "text": 2.9474160401150584,
+        "semantic": 2.5755419628694654
+      }
+    },
+    {
+      "query": "пресечение нарушения исключительного права возмещение убытков",
+      "expected": [
+        "GK-4:1252"
+      ],
+      "rankings": {
+        "text": {
+          "top5": [
+            "GK-4:1458",
+            "GK-4:1285",
+            "GK-4:1457.1",
+            "GK-4:1468",
+            "GK-4:1307"
+          ],
+          "first_expected_rank": null
+        },
+        "semantic": {
+          "top5": [
+            "GK-1:15",
+            "GK-1:393",
+            "GK-4:1252.1",
+            "GK-4:1319",
+            "GK-4:1252"
+          ],
+          "first_expected_rank": 5
+        },
+        "hybrid_rrf": {
+          "top5": [
+            "GK-4:1319",
+            "GK-1:15",
+            "GK-4:1234",
+            "GK-4:1233",
+            "GK-4:1284"
+          ],
+          "first_expected_rank": 13
+        }
+      },
+      "database_ms": {
+        "text": 6.252167047932744,
+        "semantic": 2.3844160605221987
+      }
+    }
+  ],
+  "limitations": [
+    "Exploratory hand-written queries, not an independent legal evaluation",
+    "Source-current flag is not verified legal applicability",
+    "Two acts; no coverage or production-load guarantee",
+    "Quotes verified against extracted text, not independently against the original",
+    "No reranker or answering LLM in this experiment"
+  ],
+  "parser": "ebpi-articles-v2",
+  "container_image": "pgvector/pgvector@sha256:ac08538c6f8b9904c33c8224c5e5706dbe760aca29db1d096972b4052c22a75d",
+  "source_observations": [
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redactions/?bpa=ebpi&t=%7B%22hash%22%3A+%22ba747b7c430fdfb9405741d818463a26af1577a680f7a9ab6318cc6f4faa1121%22%2C+%22ttl%22%3A+4%7D",
+      "status": 200,
+      "bytes": 15024,
+      "sha256": "32645b3774520d93a2fc22f757a4fa20c0f8a449506fc1485d3402148c79ef27",
+      "observed_at": "2026-10-30T15:47:21.766640+00:00"
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redtext?bpa=ebpi&t=495930&ttl=2",
+      "status": 200,
+      "bytes": 1696310,
+      "sha256": "6d2da7fc06d3147d6ba1eff34f3c22cf1fcdcffa15be90b8ce476953f1291d92",
+      "observed_at": "2026-10-30T15:47:35.126006+00:00"
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redtext?bpa=ebpi&t=493324&ttl=2",
+      "status": 200,
+      "bytes": 1695993,
+      "sha256": "04ffcc3e93f2e9258321c3682227be56cc937d260d6d3fab900e813249734065",
+      "observed_at": "2026-10-30T15:47:37.232324+00:00"
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redactions/?bpa=ebpi&t=%7B%22hash%22%3A+%223edc1b4f0e70ca1c9191422c7c01743f4316210d72f59b4a45581dd70060fb13%22%2C+%22ttl%22%3A+4%7D",
+      "status": 200,
+      "bytes": 6962,
+      "sha256": "977a4d142f37fedb1e08bc432bc1119df3a17a044ea9181772e40b55bd111fb7",
+      "observed_at": "2026-10-30T15:47:37.460047+00:00"
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redtext?bpa=ebpi&t=475868&ttl=2",
+      "status": 200,
+      "bytes": 1304220,
+      "sha256": "fe387527ab230b7d01f00c65889fe154ffb6f797a6c19ea77bc23e67b2a9fc69",
+      "observed_at": "2026-10-30T15:47:44.788946+00:00"
+    },
+    {
+      "url": "http://actual.pravo.gov.ru:8000/api/ebpi/redactions/?bpa=ebpi&t=%7B%22pnum%22%3A+%220001202607040012%22%2C+%22ttl%22%3A+2%7D",
+      "status": 200,
+      "bytes": 596,
+      "sha256": "750fedf9c4882d09b18979731d4be42a60b379a24a38a19ddf0092cacbacac2c",
+      "observed_at": "2026-10-30T15:47:44.931717+00:00"
+    }
+  ],
+  "source_editions": [
+    {
+      "act_key": "GK-1",
+      "edition_id": "GK-1:495930:6d2da7fc06d3147d6ba1eff34f3c22cf1fcdcffa15be90b8ce476953f1291d92",
+      "role": "source_current",
+      "source_metadata": {
+        "redid": 495930,
+        "reddocrefid": 332533,
+        "reddate": "20260901",
+        "reddatetimed": "2026-09-01T03:00:00",
+        "redstateid": 3,
+        "stateclass": 3,
+        "statename": "Действует с изменениями",
+        "redelements": 1,
+        "redtype": 0,
+        "redcaption": " с 01.09.2026, актуальная",
+        "redreason": "с учетом уточнений",
+        "redflags": 57,
+        "redcompleted": true,
+        "redchecked": true,
+        "redofficial": true,
+        "actual": true,
+        "redinitial": false,
+        "redstatus": "актуальная",
+        "hascontent": true,
+        "contentcomplete": true
+      },
+      "articles": 594,
+      "terminal_check": {
+        "kind": "article",
+        "number": "453"
+      },
+      "legal_effective_date_verified": false
+    },
+    {
+      "act_key": "GK-1",
+      "edition_id": "GK-1:493324:04ffcc3e93f2e9258321c3682227be56cc937d260d6d3fab900e813249734065",
+      "role": "historical_sample",
+      "source_metadata": {
+        "redid": 493324,
+        "reddocrefid": 331046,
+        "reddate": "20260610",
+        "reddatetimed": "2026-06-10T03:00:00",
+        "redstateid": 3,
+        "stateclass": 3,
+        "statename": "Действует с изменениями",
+        "redelements": 1,
+        "redtype": 0,
+        "redcaption": " на 10.06.2026, недействующая",
+        "redreason": "",
+        "redflags": 120,
+        "redcompleted": true,
+        "redchecked": true,
+        "redofficial": true,
+        "actual": false,
+        "redinitial": false,
+        "redstatus": "недействующая",
+        "hascontent": true,
+        "contentcomplete": true
+      },
+      "articles": 594,
+      "terminal_check": {
+        "kind": "article",
+        "number": "453"
+      },
+      "legal_effective_date_verified": false
+    },
+    {
+      "act_key": "GK-4",
+      "edition_id": "GK-4:475868:fe387527ab230b7d01f00c65889fe154ffb6f797a6c19ea77bc23e67b2a9fc69",
+      "role": "source_current",
+      "source_metadata": {
+        "redid": 475868,
+        "reddocrefid": 319647,
+        "reddate": "20260104",
+        "reddatetimed": "2026-01-04T03:00:00",
+        "redstateid": 3,
+        "stateclass": 3,
+        "statename": "Действует с изменениями",
+        "redelements": 1,
+        "redtype": 0,
+        "redcaption": " с 04.01.2026, актуальная, есть не вступившие в силу редакции",
+        "redreason": "",
+        "redflags": 185,
+        "redcompleted": true,
+        "redchecked": true,
+        "redofficial": true,
+        "actual": true,
+        "redinitial": false,
+        "redstatus": "актуальная",
+        "hascontent": true,
+        "contentcomplete": true
+      },
+      "articles": 334,
+      "terminal_check": {
+        "kind": "source_repeal_notice",
+        "heading": "Глава 77. (Статьи 1542 - 1551)",
+        "notice": "(Глава утратила силу - Федеральный закон от 22.12.2020 № 456-ФЗ)"
+      },
+      "legal_effective_date_verified": false
+    }
+  ],
+  "future_metadata_sample": {
+    "docid": 331783,
+    "dochash": "7e026bde4ab2a2dee2cac210ac66f86fe8ce2a69d30f1736814e9326067d9ae9",
+    "serverdate": "2026-10-30T00:00:00",
+    "redactions": [
+      {
+        "redid": 494507,
+        "reddocrefid": 0,
+        "reddate": "20270101",
+        "reddatetimed": "2027-01-01T03:00:00",
+        "redstateid": 2,
+        "stateclass": 2,
+        "statename": "Действует без изменений",
+        "redelements": 1,
+        "redtype": 0,
+        "redcaption": " исходная",
+        "redreason": "",
+        "redflags": 62,
+        "redcompleted": true,
+        "redchecked": false,
+        "redofficial": true,
+        "actual": false,
+        "redinitial": true,
+        "redstatus": "не вступившая",
+        "hascontent": true,
+        "contentcomplete": true
+      }
+    ],
+    "error": ""
+  },
+  "median_database_ms": {
+    "text": 3.6967500345781446,
+    "semantic": 2.7132915565744042
+  }
+}

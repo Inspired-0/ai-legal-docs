@@ -3,53 +3,65 @@
 Новая сессия: [AGENTS.md](../AGENTS.md) → [CURRENT_STATE.md](CURRENT_STATE.md) →
 требования и активный план задачи → нужные части кода и архитектуры.
 
-## Постоянный контекст
+## Концепция и реализация модулей
 
-- [PROJECT.md](PROJECT.md) — цель, scope, non-goals и термины.
-- [architecture.md](architecture.md) — поток данных, интерфейсы и ограничения реализации.
-- [limitations.md](limitations.md) — ограничения демо.
-- [SECURITY.md](../SECURITY.md) — работа с данными.
-- [PROVENANCE.md](../PROVENANCE.md) — происхождение кода и материалов.
+- [Общая концепция](specs/modular-legal-platform.md): самостоятельные MCP, плагин и IDE.
+- [Правовой MCP](specs/legal-mcp.md): федеральный корпус, подбор регулирования,
+  поиск ограничений, редакции, цитаты и обновления.
+- [Юридический плагин](specs/legal-agent-plugin.md): самостоятельная работа с документами
+  в Codex/Claude Code и необязательные правовые источники.
+- [IDE](specs/legal-ide-shell.md): третий модуль, рабочее пространство и подключения.
+- [Дорожная карта](plans/active/modular-platform-roadmap.md): этапы, зависимости и приёмка.
+- [Интервью](investigations/modular-platform-interview.md): принятые решения и открытые вопросы.
+- [ADR-0002](decisions/ADR-0002-independent-legal-modules.md): границы модулей и порядок выпуска.
+- [ADR-0003](decisions/ADR-0003-compound-legal-search.md): составной поиск на сервере,
+  оценка применимости у подключённого агента.
 
-## Требования и работа
+## Общие требования
 
-- [Исследование рынка IDE для юристов](investigations/legal-ide-market.md) — конкуренты,
-  движки Word/PDF, правовые API, лицензии и экономика; срез на 2026-10-18.
-- [Открытая правовая база](investigations/open-legal-sources.md) — официальные источники,
-  скачиваемые корпуса, редакции и условия коммерческого использования; срез на 2026-10-19.
-- [Детальный аудит pravo.gov.ru](investigations/pravo-portal-audit.md) — работающие HTTP API,
-  экспорт и редакции ИПС, проверенные запросы, ограничения полноты и синхронизации.
-- [Источники и конвейер newsBot](investigations/newsbot-sources.md) — 15 адаптеров,
-  новая проверка ЕБПИ, повторное использование загрузки и ограничения для IDE.
-- [Интерактивный макет IDE](../prototypes/legal-ide/README.md) — локальные экраны,
-  сценарии работы, изображения и результаты браузерной проверки.
-- [Видение универсальной Windows IDE](specs/legal-ide-vision.md) — коммерческий продукт,
-  первые профили IT/закупок, архитектура, этапы и открытые вопросы.
-- [Агентное ядро, RAG и навыки](specs/agent-knowledge-skills.md) — работа от ситуации клиента,
-  встроенная законодательная база и создание повторяемых процедур.
-- [Точные правовые ссылки](specs/legal-citations.md) — акт, редакция, пункт, проверка цитаты,
-  применимость и связь с положением договора.
-- [Локальная псевдонимизация](specs/local-pseudonymization.md) — защищенный контекст агента,
-  обратная подстановка, каналы передачи и критерии проверки.
-- [Спецификация демо](specs/synthetic-document-pipeline.md) — текущее поведение и критерии.
-- [Шаблон спецификации](specs/TEMPLATE.md) — для новых существенных требований.
-- [Планы](plans/README.md) — active/completed и жизненный цикл.
-- [Минималистичный интерфейс и диалоги](plans/completed/minimal-ui-dialogues.md) — завершенное обновление, поиск и изоляция контекста.
-- [Проверочный прототип IDE](plans/active/ide-prototype.md) — этапы, критерии и кандидаты API моделей.
-- [Шаблон плана](plans/TEMPLATE.md) — этапы, риски, проверки, решения и состояние.
-- [ADR](decisions/README.md) — значимые решения; [шаблон](decisions/TEMPLATE.md).
-- [Организация контекста](decisions/ADR-0001-repository-context.md) — адаптация workflow к демо.
+- [Агентные процедуры и навыки](specs/agent-knowledge-skills.md): ответственность модулей,
+  настройка процедур и отдельная проверка результата.
+- [Правовые ссылки](specs/legal-citations.md): акт, редакция, пункт, доказательство и применимость.
+- [Будущий защищённый режим](specs/local-pseudonymization.md): псевдонимизация и контроль
+  каналов; не условие первого выпуска плагина.
 
-## Процедуры
+## Исследования для модулей
 
-- [Рабочий AI-прототип](runbooks/live-ide.md) — запуск localhost, выбранный endpoint/model,
-  реальные предложения правок, preview контекста, отдельный review и ограничения.
+- [Способы реализации](investigations/modular-legal-platform.md): MCP, стек, newsBot и упаковка плагина.
+- [Каталог claude-for-legal](investigations/claude-for-legal-capabilities.md): 12 основных
+  пакетов, 150 файлов навыков, 10 агентов, форматы и зависимости.
+- [VPS и бесплатные источники](investigations/legal-mcp-vps.md): CPU/RAM/диск и план измерений.
+- [Открытая правовая база](investigations/open-legal-sources.md): корпуса, редакции и условия использования.
+- [Аудит pravo.gov.ru](investigations/pravo-portal-audit.md): HTTP API, экспорт и ограничения.
+- [Источники newsBot](investigations/newsbot-sources.md): адаптеры, ЕБПИ и конвейер обновлений.
+- [RAG-проба](investigations/shared-legal-rag-spike.md): фактический прогон и ограничения;
+  [код](../prototypes/legal-rag/README.md), [план](plans/completed/shared-legal-rag-spike.md).
+- [Конкуренты и движки документов](investigations/legal-ide-market.md): материалы для
+  этапа IDE; возможности и условия поставщиков требуют проверки перед выбором.
 
-- [Разработка и проверки](runbooks/development.md) — команды, покрытие, диагностика.
-- [Работа агентов](runbooks/agent-workflow.md) — постановка задачи, ревью, handoff.
-- [Запрос условий правовых API](runbooks/legal-api-evaluation-request.md) — публичные условия и готовый проект обращения к обоим поставщикам; не отправлен.
-- [Работа с шаблоном](template-authoring.md) — слоты, оформление и ограничения пересборки.
+## Существующий код и запуск
 
-Для долговечных доменных заметок создавай `knowledge/`, а для повторно полезных исследований —
-`investigations/` по мере появления материалов. Не сохраняй сырые логи и временный чат.
-Добавляй сюда новые устойчивые документы; перечень задач и результаты проверок держи в CURRENT_STATE.
+- [PROJECT.md](PROJECT.md): продуктовый контекст и границы исходного демо.
+- [architecture.md](architecture.md): целевые модули и реализованные прототипы.
+- [DOCX-демо](specs/synthetic-document-pipeline.md), [ограничения](limitations.md)
+  и [работа с шаблоном](template-authoring.md).
+- [IDE-прототип](../prototypes/legal-ide/README.md): экраны, сценарии и результаты проверок.
+- [Запуск AI-прототипа](runbooks/live-ide.md): localhost, модель/API, preview и ограничения.
+- [Разработка и проверки](runbooks/development.md): установка, команды и диагностика.
+- [SECURITY.md](../SECURITY.md) и [PROVENANCE.md](../PROVENANCE.md): данные и происхождение материалов.
+
+## Процесс и выполненные задачи
+
+- [Работа агентов](runbooks/agent-workflow.md): постановка задачи, ревью и передача контекста.
+- [Правила планов](plans/README.md) и [шаблон](plans/TEMPLATE.md).
+- [Шаблон спецификации](specs/TEMPLATE.md), [ADR](decisions/README.md) и [шаблон ADR](decisions/TEMPLATE.md).
+- [Организация контекста](decisions/ADR-0001-repository-context.md).
+- [Переход к модульной концепции](plans/completed/modular-platform-discovery.md): исследование и интервью.
+- [Очистка документации](plans/completed/documentation-cleanup.md): удаление отменённых требований и ссылок.
+- [Составной поиск MCP](plans/completed/compound-legal-search.md): уточнение сценариев,
+  границы с рассуждением агента и приёмка.
+- [Обновление интерфейса](plans/completed/minimal-ui-dialogues.md): выполненная работа над прототипом.
+
+Добавляй сюда новые устойчивые документы; результаты проверок и следующий шаг
+держи в CURRENT_STATE. Завершённые планы хранят историю выполненной работы,
+но не заменяют действующие требования и дорожную карту.
